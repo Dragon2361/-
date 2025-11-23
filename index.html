@@ -11,6 +11,21 @@
         video {
             max-width: 100%;
             height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+        }
+        .play-button {
+            background: #2c3e50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        .play-button:hover {
+            background: #3498db;
         }
     </style>
 </head>
@@ -23,10 +38,15 @@
 <img src="Снимок экрана 2025-11-23 165317.png" alt="Наша параша" width="400">
 
      <div class="video-container">
-        <video width="600" controls>
+        <video width="600" controls id="myVideo">
             <source src="Атомный взрыв Ядерный взрыв Термоядерный взрыв [get.gt].mp4" type="video/mp4">
             Ваш браузер не поддерживает видео тег.
         </video>
+        <br>
+        <button class="play-button" onclick="playVideoWithSound()">
+            ▶ Воспроизвести видео со звуком
+        </button>
+        <p><small>Нажмите кнопку для воспроизведения со звуком</small></p>
     </div>
 
     <p>Государственное халяльное профессиональное аутистское учреждение Халяльного края "Халяльный турмсо-булпапниковский техникум"</p>
@@ -46,6 +66,7 @@
 </body>
 
 </html>
+
 
 
 
